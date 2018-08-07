@@ -1,0 +1,28 @@
+Started by user [8mha:////4HU4OIlfcXYtEU/siUujAXdZSOfRc8r5oR7B0NCuzez0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL9xJTczDwA4LbuW8AAAAA=[0mDavid Phipps
+ln -s builds/lastSuccessfulBuild /var/jenkins_home/jobs/nodejs_example_app/lastSuccessful failed: 71 Protocol error
+ln -s builds/lastStableBuild /var/jenkins_home/jobs/nodejs_example_app/lastStable failed: 71 Protocol error
+Building in workspace /var/jenkins_home/workspace/nodejs_example_app
+Cloning the remote Git repository
+Cloning repository https://github.com/wardviaene/node-demo-app.git
+ > git init /var/jenkins_home/workspace/nodejs_example_app # timeout=10
+Fetching upstream changes from https://github.com/wardviaene/node-demo-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/wardviaene/node-demo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/wardviaene/node-demo-app.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/wardviaene/node-demo-app.git # timeout=10
+Fetching upstream changes from https://github.com/wardviaene/node-demo-app.git
+ > git fetch --tags --progress https://github.com/wardviaene/node-demo-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 586b7bccba0a385c3759015d6036f095ba456c8e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 586b7bccba0a385c3759015d6036f095ba456c8e
+Commit message: "node demo app"
+First time build. Skipping changelog.
+Unpacking https://nodejs.org/dist/v10.8.0/node-v10.8.0-linux-x64.tar.gz to /var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node10 on Jenkins
+[nodejs_example_app] $ /bin/sh -xe /tmp/jenkins3982490329029628055.sh
++ npm install
+/tmp/jenkins3982490329029628055.sh: 2: /tmp/jenkins3982490329029628055.sh: npm: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
