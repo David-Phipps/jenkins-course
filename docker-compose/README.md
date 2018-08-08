@@ -1,0 +1,1 @@
+tag Dockerfile as jenkins-docker
